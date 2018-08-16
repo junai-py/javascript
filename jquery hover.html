@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> jQuery</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<style type="text/css">
+#circle
+{
+width:150px;
+height:150px;
+border-radius:50%;
+background-color:blue;
+}
+.square
+{
+width:150px;
+height:150px;
+background-color:red;
+}
+</style>
+</head>
+<body>
+<div id="circle"></div>
+<p><div class="square"></div></p>
+<p><div class="square"></div></p>
+<script type ="text/javascript">
+$("#circle").hover(function(){
+$("#circle").css("background-color","red");
+});
+$(".square").hover(function(){
+$(".square").css("background-color","blue");
+});
+</script>
+</body>
+</html>
+ 
